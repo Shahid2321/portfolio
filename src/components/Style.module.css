@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+  margin: 0;
+  background: #008cba;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Ensures items are spaced between logo and menu */
+  align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+  margin-left: -1rem;
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the logo fits well within circular boundaries */
+}
+
+.menu {
+  display: flex;
+  gap: 2rem; /* Space between menu items */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuItem a {
+  font-size: 20px;
+  color: white; /* Ensure this variable is defined globally */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menuItem a:hover {
+  color: rgb(26, 28, 29);
+}
+
+/* Hero */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  /* background: var(--background-color); */
+  /* background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+   
+}
+
+.content h1 {
+  margin-left: 5rem;
+  /* margin-top: 4rem; */
+  font-size: 3rem;
+  color: #cce72e;
+  text-shadow: 2px 2px 5px rgba(219, 219, 78, 0.5);
+}
+
+.content h1 span {
+  color: rgb(241, 143, 77);
+}
+
+.content p {
+  margin-left: 5rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+.image {
+  margin-top: 5rem;
+  width: 40%;
+  height: 90%;
+  border-radius: 10%;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgb(247, 246, 246);
+}
+
+
+/* About */
+
+.about {
+  max-width: 100%;
+  /* margin: 2rem auto; */
+  padding: 1.5rem;
+  /* background-color:#1d2951; */
+  /* border: 1px solid #ddd; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  font-family: "Arial", sans-serif;
+  line-height: 1.8;
+  color:rgb(14, 13, 13);
+}
+
+.about h2 {
+  /* margin-bottom: 2rem; */
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.about p {
+  font-size: 1rem;
+  color:rgb(20, 20, 20);
+}
+
+
+/* Services */
+
+/* Section Styling */
+.servicesSection {
+  padding: 4rem 2rem;
+  /* background-color: #a2798f; */
+  /* background-color: #dcdce4; */
+}
+
+/* Title Styling */
+.servicesTitle {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Cards Container */
+.servicesCards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center; /* Center cards */
+}
+
+/* Individual Card Styling */
+.servicesCard {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background-color: #333; /* Replace with your text color */
+  color: #fff; /* Replace with your background color */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(8, 8, 8, 0.1); /* Adds a shadow for a modern look */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover Effect */
+.servicesCard:hover {
+  transform: translateY(-5px);
+  background-color: rgb(196, 211, 109);
+  box-shadow: 0 6px 10px rgba(211, 194, 38, 0.15);
+}
+
+/* Card Title */
+.cardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Card Description */
+.cardDescription {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* contact */
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  /* background:#003153; */
+  color: rgb(8, 8, 8); 
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  /* border: none; */
+  border-radius: 5px;
+}
+
+.textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  /* border: none; */
+  border-radius: 5px;
+}
+
+.button {
+  background: rgb(89, 127, 230); /* Replace with your accent color */
+  color: var(--text-color);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: orange; /* Replace with your secondary color */
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary-color); /* Use CSS variables or hardcoded values */
+  color: var(--text-color); /* Or specify color directly */
+}
